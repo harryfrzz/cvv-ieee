@@ -1,21 +1,16 @@
+import Silk from "../../ReactBits/Silk/Silk";
 import Wrapper from "./Components/Wrapper";
 
 export default function Home() {
   return (
     <>
     <Wrapper>
-        <div className="flex w-full h-screen">
-            <div className="w-full bg-white h-screen">
+            <div className="w-full bg-white h-screen relative z-10">
               <div className="flex w-full h-screen justify-center items-center">
-                 <h1 className="font-bold text-6xl text-[#604D53]">Chinmaya Vishwa Vidyapeeth <br/> IEEE Student Branch</h1>
+                <h1 className="absolute left-10 z-10 text-white text-[2.8vw]">Chinmaya Vishwa Vidyapeeth <br/>IEEE Student Branch</h1>
+                <Silk/>
               </div>
             </div>
-        </div>
-
-        <div className="w-full bg-blue-100 h-[500px]"></div>
-        <div className="w-full bg-blue-200 h-[800px]"></div>
-        <div className="w-full bg-blue-300 h-[600px]"></div>
-        
     </Wrapper>
     </>
   );
