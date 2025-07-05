@@ -3,7 +3,6 @@ import {
   Navbar as ResizableNavbar,
   NavBody,
   NavItems,
-  NavbarButton,
 } from "@/components/ui/resizable-navbar";
 import Logo from "../res/web-logo.png"
 import Image from "next/image";
@@ -30,7 +29,6 @@ export default function Navbar(){
           <Image src={Logo} alt="cvv ieee logo" className="w-32"/>
           <NavItems items={navItems} activeIndex={0} />
           <div className="flex items-center gap-4">
-            <NavbarButton>Join IEEE</NavbarButton>
           </div>
         </NavBody>
       </ResizableNavbar>
