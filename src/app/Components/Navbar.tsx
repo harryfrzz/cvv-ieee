@@ -27,7 +27,7 @@ export default function Navbar(){
      <ResizableNavbar>
         <NavBody>
           <Image src={Logo} alt="cvv ieee logo" className="w-32"/>
-          <NavItems items={navItems} activeIndex={0} />
+          <NavItems className="font-jetbrains-mono" items={navItems} activeIndex={0} />
           <div className="flex items-center gap-4">
           </div>
         </NavBody>
