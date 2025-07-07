@@ -9,7 +9,7 @@ export default function Wrapper({children}: {children : ReactNode}){
             <Navbar/>
         </div>
             {children}
-            <Footer/>
+
         </>
     )
 }

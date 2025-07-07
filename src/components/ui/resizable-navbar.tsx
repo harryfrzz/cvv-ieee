@@ -5,6 +5,7 @@ import {
   motion,
   AnimatePresence,
 } from "motion/react";
+import Link from "next/link";
 
 import React, { useState } from "react";
 
@@ -86,7 +87,7 @@ export const NavItems = ({ items, className, onItemClick, activeIndex }: NavItem
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className="relative px-4 py-2 text-white"
@@ -100,7 +101,7 @@ export const NavItems = ({ items, className, onItemClick, activeIndex }: NavItem
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
