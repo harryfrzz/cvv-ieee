@@ -1,5 +1,4 @@
 import Silk from "../../ReactBits/Silk/Silk";
-import Features from "./Components/Features";
 import Wrapper from "./Components/Wrapper";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ChromaGrid from "../../ReactBits/ChromaGrid/ChromaGrid";
@@ -95,7 +94,6 @@ export default function Home() {
                       ease="power3.out"
                     />
               </div>
-              <Footer/>
             </div>
     </Wrapper>
     </>
