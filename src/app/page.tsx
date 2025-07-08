@@ -4,6 +4,7 @@ import Features from "./Components/Features";
 import Wrapper from "./Components/Wrapper";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ChromaGrid from "../../ReactBits/ChromaGrid/ChromaGrid";
+import Footer from "./Components/Footer";
 
 const items = [
   {
@@ -88,6 +89,7 @@ export default function Home() {
                     />
               </div>
               <Features/>
+              <Footer/>
             </div>
     </Wrapper>
     </>
