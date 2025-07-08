@@ -19,6 +19,10 @@ export default function Navbar(){
       link: "#pricing",
     },
     {
+      name: "Execom",
+      link: "#pricing",
+    },
+    {
       name: "Gallery",
       link: "#contact",
     },

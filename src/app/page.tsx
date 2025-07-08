@@ -1,4 +1,3 @@
-import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import Silk from "../../ReactBits/Silk/Silk";
 import Features from "./Components/Features";
 import Wrapper from "./Components/Wrapper";
@@ -77,8 +76,13 @@ export default function Home() {
                 </div>
                 <Silk/>
             </div>
-              <div className="w-full flex justify-center flex-col gap-10 items-center h-auto p-20 bg-black">
-                <h1 className="text-white font-jetbrains-mono text-3xl">Events</h1>
+              <div className="w-full flex justify-center flex-col gap-15 items-start p-20 h-auto bg-black">
+                <div className="flex w-full justify-between items-center">
+                  <h1 className="text-white font-jetbrains-mono text-3xl text-start">Events</h1>
+                  <div className="flex w-auto h-10 p-2 bg-black border border-white text-white justify-center items-center font-jetbrains-mono">
+                   Show all
+                  </div>
+                </div>
                   <ChromaGrid 
                       items={items}
                       radius={100}
