@@ -4,6 +4,7 @@ import Wrapper from "./Components/Wrapper";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ChromaGrid from "../../ReactBits/ChromaGrid/ChromaGrid";
 import Footer from "./Components/Footer";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 const items = [
   {
@@ -70,8 +71,10 @@ export default function Home() {
             <div className="flex w-full h-screen justify-center flex-col items-center">
                 <div className="absolute w-full flex h-full justify-center flex-col items-center">
                   <h1 className=" text-center tracking-[-4] z-10 font-jetbrains-mono font-extrabold text-[rgb(219,219,219)] text-[3vw]">Chinmaya Vishwa Vidyapeeth <br/>IEEE Student Branch</h1>
-                  <div className="absolute bottom-80 z-10 flex hidden flex-col items-center">
-                    <h1 className=" text-center tracking-[-3] z-10 font-jetbrains-mono font-extrabold text-[rgb(219,219,219)] text-[1vw]">Scroll down</h1>
+                  <div className="absolute bottom-170 z-10 flex flex-col items-center">
+                    <TypingAnimation duration={50} startOnView className="font-jetbrains-mono text-[rgb(219,219,219)] tracking-[-2] z-10 text-md">
+                      Scroll down
+                    </TypingAnimation>
                     <KeyboardArrowDownIcon sx={{fontSize : "22px",color: "rgb(219,219,219)"}}/>
                   </div>
                 </div>
@@ -92,7 +95,6 @@ export default function Home() {
                       ease="power3.out"
                     />
               </div>
-              <Features/>
               <Footer/>
             </div>
     </Wrapper>

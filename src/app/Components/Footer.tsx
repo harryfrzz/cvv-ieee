@@ -7,14 +7,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="bg-black w-full h-[300px] text-white flex items-center justify-between px-8 md:px-16 lg:px-24">
-      <div className="flex flex-col space-y-6">
-        <div className="w-32 h-16 rounded-lg flex items-center justify-center p-2">
-          <Image src={Logo} alt="cvv ieee logo" className="h-32 w-24" height={500}/>
-        </div>
-        <div className="w-32 h-16 rounded-lg flex items-center justify-center p-2">
-          <Image src={Logo2} alt="cvv ieee logo" className="w-32"/>
-        </div>
+    <div className="bg-black w-full h-[250px] text-white flex items-center justify-between px-8 md:px-16 lg:px-24">
+      <div className="flex w-41 flex-col gap-8">
+          <Image src={Logo} alt="cvv ieee logo" className="w-41"/>
+          <Image src={Logo2} alt="cvv ieee logo" className="w-30"/>
       </div>
       <div className="flex flex-col items-center space-y-4">
         <h3 className="text-xl font-jetbrains-mono font-semibold text-white">IEEE SB CVV</h3>
@@ -22,13 +18,13 @@ export default function Footer() {
           Advancing technology for humanity - driven by students, powered by innovation
         </p>
         <div className="text-gray-500 font-jetbrains-mono text-sm">
-          © 2025 Made with love by IEEE SB CVV.
+          © 2025 Made with ❤️ by IEEE SB CVV.
         </div>
       </div>
 
 
-      <div className="flex flex-col space-y-4">
-        <h4 className="text-lg font-jetbrains-monofont-medium text-white mb-2">Connect With Us</h4>
+      <div className="flex flex-col space-y-4 font-jetbrains-mono">
+        <h4 className="text-lg text-white mb-4">Connect With Us</h4>
         
 
         <a 

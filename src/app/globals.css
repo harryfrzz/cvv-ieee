@@ -121,7 +121,7 @@
   }
 }
 body{
-  background-color: #67616d;
+  background-color: black;
 }
 .font-jetbrains-mono{
   font-family: var(--font-jetbrains-mono);
