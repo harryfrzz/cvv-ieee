@@ -1,6 +1,8 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
+import { cn } from "@/lib/utils";
 
 export interface ChromaItem {
   image: string;
@@ -177,7 +179,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           key={i}
           onMouseMove={handleCardMove}
           onClick={() => handleCardClick(c.url)}
-          className="group relative flex flex-col w-[320px] h-[380px] rounded-[20px] overflow-hidden border-transparent transition-colors duration-300 cursor-pointer"
+          className="group relative flex flex-col w-[320px] h-[400px] rounded-[20px] overflow-hidden border-transparent transition-colors duration-300 cursor-pointer"
           style={
             {
               "--card-border": c.borderColor || "transparent",
@@ -193,6 +195,36 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
             }}
           />
+          {(c.upcomingEvent === true || c.handle) && (
+                <div className="flex-shrink-0 ml-auto absolute bottom-4 z-20 right-4">
+                  {c.upcomingEvent === true ? (
+                    <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
+                      <span
+                        className={cn(
+                          "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]",
+                        )}
+                        style={{
+                          WebkitMask:
+                            "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                          WebkitMaskComposite: "destination-out",
+                          mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                          maskComposite: "subtract",
+                          WebkitClipPath: "padding-box",
+                        }}
+                      />
+                      <AnimatedGradientText className="text-sm font-medium">
+                        Upcoming
+                      </AnimatedGradientText>
+                    </div>
+                  ) : (
+                    c.handle && (
+                      <span className="text-[0.85rem] border border-white px-2 py-1 rounded-2xl opacity-80 whitespace-nowrap">
+                        {c.handle}
+                      </span>
+                    )
+                  )}
+                </div>
+              )}
           <div className="relative z-10 flex-1 p-[10px] box-border">
             <img
               src={c.image}
@@ -203,32 +235,17 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           </div>
           
           {/* Title and Status Section */}
-          <div className="relative z-10 px-3 pt-3 pb-2">
-            <div className="flex items-start gap-3">
-              <h3 className="m-0 text-[1.05rem] font-jetbrains-mono text-white leading-tight whitespace-nowrap overflow-hidden text-ellipsis min-w-0 flex-1">
+          <div className="relative z-10 px-3 pt-3 h-full justify-start">
+            <div className="flex items-start">
+              <h3 className="m-0 text-[1.05rem] font-jetbrains-mono tracking-tighter text-white leading-tight whitespace-nowrap overflow-hidden text-ellipsis min-w-0 flex-1">
                 {c.title}
               </h3>
-              {(c.upcomingEvent === false || c.handle) && (
-                <div className="flex-shrink-0 ml-auto">
-                  {c.upcomingEvent === false ? (
-                    <span className="text-[0.75rem] border border-white text-white px-2 py-1 rounded-full font-medium whitespace-nowrap">
-                      Upcoming
-                    </span>
-                  ) : (
-                    c.handle && (
-                      <span className="text-[0.85rem] border border-white px-2 py-1 rounded-2xl opacity-80 whitespace-nowrap">
-                        {c.handle}
-                      </span>
-                    )
-                  )}
-                </div>
-              )}
             </div>
           </div>
 
           {/* Time and Date Section */}
           {(c.date || c.time) && (
-            <div className="relative z-10 px-3 pb-3">
+            <div className="relative flex flex-col justify-start h-full z-10 px-3 pb-3 -mt-10">
               <div className="flex justify-between items-center text-white opacity-85">
                 {c.date && (
                   <span className="text-[0.85rem] whitespace-nowrap overflow-hidden text-ellipsis max-w-[45%]">{c.date}</span>
@@ -238,7 +255,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 )}
               </div>
               {c.location && (
-                <div className="mt-1">
+                <div className="mt-2">
                   <span className="text-[0.85rem] text-white opacity-85 whitespace-nowrap overflow-hidden text-ellipsis block">
                     📍 {c.location}
                   </span>

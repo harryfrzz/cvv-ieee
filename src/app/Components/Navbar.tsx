@@ -8,31 +8,34 @@ import Logo from "../res/web-logo.png"
 import Image from "next/image";
 import GlareHover from "../../../ReactBits/GlareHover/GlareHover";
 
-export default function Navbar(){
+export default function Navbar({activeIndex}: {activeIndex : number}){
   const navItems = [
     {
       name: "Home",
-      link: "#features",
+      link: "/",
     },
     {
       name: "Events",
-      link: "#pricing",
+      link: "/Events",
     },
     {
       name: "Execom",
-      link: "#pricing",
+      link: "/Execom",
     },
     {
       name: "Gallery",
-      link: "#contact",
+      link: "/Gallery",
     },
+    {
+      name: "About",
+      link: "/About"
+    }
   ];
-// <div className="flex w-auto px-4 py-2 rounded-full justify-center items-center bg-white">Join IEEE</div>
     return(
      <ResizableNavbar>
         <NavBody>
           <Image src={Logo} alt="cvv ieee logo" className="w-32"/>
-          <NavItems className="font-jetbrains-mono" items={navItems} activeIndex={0} />
+          <NavItems className="font-jetbrains-mono" items={navItems} activeIndex={activeIndex} />
           
           <GlareHover className="text-white font-jetbrains-mono tracking-tighter px-2 text-sm" width="110px" height="40px">
            Join IEEE

@@ -61,7 +61,7 @@ export const NavBody = ({ children, className }: NavBodyProps) => {
   return (
     <motion.div
       style={{
-        minWidth: "800px",
+        minWidth: "900px",
         width: "40%",
         transform: "translateY(20px)",
       }}
