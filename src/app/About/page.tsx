@@ -2,7 +2,7 @@ import Wrapper from "../Components/Wrapper";
 
 export default function About(){
     return(
-        <Wrapper>
+        <Wrapper curIndex={4}>
             <div>
                 
             </div>
