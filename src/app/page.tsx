@@ -70,7 +70,7 @@ export default function Home() {
             <div className="flex w-full h-screen justify-center flex-col items-center">
                 <div className="absolute w-full flex h-full justify-center flex-col items-center">
                   <h1 className=" text-center tracking-[-4] z-10 font-jetbrains-mono font-extrabold text-[rgb(219,219,219)] text-[3vw]">Chinmaya Vishwa Vidyapeeth <br/>IEEE Student Branch</h1>
-                  <div className="absolute bottom-170 z-10 flex flex-col items-center">
+                  <div className="absolute bottom-135 z-10 flex flex-col items-center">
                     <TypingAnimation duration={50} startOnView className="font-jetbrains-mono text-[rgb(219,219,219)] tracking-[-2] z-10 text-md">
                       Scroll down
                     </TypingAnimation>

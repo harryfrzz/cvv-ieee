@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="flex flex-col items-center space-y-4">
         <h3 className="text-xl font-jetbrains-mono font-semibold text-white">IEEE SB CVV</h3>
         <p className="text-gray-400 font-jetbrains-mono text-center max-w-md">
-          Advancing technology for humanity - driven by students, powered by innovation
+         Innovate. Empower. Build.
         </p>
         <div className="text-gray-500 font-jetbrains-mono text-sm">
           © 2025 Made with ❤️ by IEEE SB CVV.
