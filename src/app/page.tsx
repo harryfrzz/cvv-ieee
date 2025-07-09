@@ -2,64 +2,75 @@ import Silk from "../../ReactBits/Silk/Silk";
 import Wrapper from "./Components/Wrapper";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ChromaGrid from "../../ReactBits/ChromaGrid/ChromaGrid";
-import Footer from "./Components/Footer";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 const items = [
   {
-    image: "https://i.pravatar.cc/300?img=1",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://github.com/sarahjohnson"
-  },
-  {
-    image: "https://i.pravatar.cc/300?img=2",
-    title: "Mike Chen",
-    subtitle: "Backend Engineer",
-    handle: "@mikechen",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(100deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://linkedin.com/in/mikechen"
-  },
-  {
-    image: "https://i.pravatar.cc/300?img=2",
-    title: "Mike Chen",
-    subtitle: "Backend Engineer",
-    handle: "@mikechen",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(185deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://linkedin.com/in/mikechen"
-  },
-   {
-    image: "https://i.pravatar.cc/300?img=1",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://github.com/sarahjohnson"
-  },
-   {
-    image: "https://i.pravatar.cc/300?img=1",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://github.com/sarahjohnson"
-  },
-   {
-    image: "https://i.pravatar.cc/300?img=1",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, rgba(255,255,255,0.4), rgba(0,0,0,0.9))",
-    url: "https://github.com/sarahjohnson"
-  },
+      image: "https://i.pravatar.cc/300?img=8",
+      title: "Tech Workshop",
+      time: "2:00 PM - 4:00 PM",
+      date: "29/07/2025",
+      upcomingEvent: true,
+      location: "Main Auditorium",
+      borderColor: "#4F46E5",
+      gradient: "linear-gradient(145deg, rgb(110,110,110), #000)",
+      url: "https://github.com/",
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=11",
+      title: "AI Conference hello mwine heyeyydfdsfsdfsdfdsfdsdsfsadsaasdd",
+      time: "10:00 AM - 6:00 PM",
+      date: "15/08/2025",
+      upcomingEvent: false,
+      location: "Conference Hall",
+      borderColor: "#10B981",
+      gradient: "linear-gradient(210deg, rgb(120,120,120), #000)",
+      url: "https://linkedin.com/in/",
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=3",
+      title: "Coding Bootcamp",
+      time: "9:00 AM - 5:00 PM",
+      date: "22/08/2025",
+      upcomingEvent: true,
+      location: "Lab 101",
+      borderColor: "#F59E0B",
+      gradient: "linear-gradient(165deg, rgb(100,100,100), #000)",
+      url: "https://dribbble.com/",
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=16",
+      title: "Hackathon 2025",
+      time: "All Day",
+      date: "05/09/2025",
+      upcomingEvent: true,
+      location: "Innovation Center",
+      borderColor: "#EF4444",
+      gradient: "linear-gradient(195deg, rgb(130,130,130), #000)",
+      url: "https://kaggle.com/",
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=25",
+      title: "Networking Event",
+      time: "6:00 PM - 9:00 PM",
+      date: "12/09/2025",
+      upcomingEvent: false,
+      location: "Student Center",
+      borderColor: "#8B5CF6",
+      gradient: "linear-gradient(225deg, rgb(90,90,90), #000)",
+      url: "https://github.com/",
+    },
+    {
+      image: "https://i.pravatar.cc/300?img=60",
+      title: "Industry Talk",
+      time: "3:00 PM - 5:00 PM",
+      date: "20/09/2025",
+      upcomingEvent: true,
+      location: "Lecture Hall A",
+      borderColor: "#06B6D4",
+      gradient: "linear-gradient(135deg, rgb(140,140,140), #000)",
+      url: "https://aws.amazon.com/",
+    },
 ];
 
 export default function Home() {

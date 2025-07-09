@@ -5,12 +5,14 @@ import { gsap } from "gsap";
 export interface ChromaItem {
   image: string;
   title: string;
-  subtitle: string;
+  time?: string;
+  date?: string;
   handle?: string;
   location?: string;
   borderColor?: string;
   gradient?: string;
   url?: string;
+  upcomingEvent?: boolean;
 }
 
 export interface ChromaGridProps {
@@ -41,54 +43,63 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
   const demo: ChromaItem[] = [
     {
       image: "https://i.pravatar.cc/300?img=8",
-      title: "Alex Rivera",
-      subtitle: "Full Stack Developer",
-      handle: "@alexrivera",
+      title: "Tech Workshop",
+      time: "2:00 PM - 4:00 PM",
+      date: "29/07/2025",
+      upcomingEvent: false,
+      location: "Main Auditorium",
       borderColor: "#4F46E5",
       gradient: "linear-gradient(145deg,#4F46E5,#000)",
       url: "https://github.com/",
     },
     {
       image: "https://i.pravatar.cc/300?img=11",
-      title: "Jordan Chen",
-      subtitle: "DevOps Engineer",
-      handle: "@jordanchen",
+      title: "AI Conference - Deep Learning and Neural Networks Symposium",
+      time: "10:00 AM - 6:00 PM",
+      date: "15/08/2025",
+      location: "Conference Hall",
       borderColor: "#10B981",
       gradient: "linear-gradient(210deg,#10B981,#000)",
       url: "https://linkedin.com/in/",
     },
     {
       image: "https://i.pravatar.cc/300?img=3",
-      title: "Morgan Blake",
-      subtitle: "UI/UX Designer",
-      handle: "@morganblake",
+      title: "Coding Bootcamp",
+      time: "9:00 AM - 5:00 PM",
+      date: "22/08/2025",
+      upcomingEvent: false,
+      location: "Lab 101",
       borderColor: "#F59E0B",
       gradient: "linear-gradient(165deg,#F59E0B,#000)",
       url: "https://dribbble.com/",
     },
     {
       image: "https://i.pravatar.cc/300?img=16",
-      title: "Casey Park",
-      subtitle: "Data Scientist",
-      handle: "@caseypark",
+      title: "Hackathon 2025 - Innovation Challenge for Students",
+      time: "All Day",
+      date: "05/09/2025",
+      location: "Innovation Center",
       borderColor: "#EF4444",
       gradient: "linear-gradient(195deg,#EF4444,#000)",
       url: "https://kaggle.com/",
     },
     {
       image: "https://i.pravatar.cc/300?img=25",
-      title: "Sam Kim",
-      subtitle: "Mobile Developer",
-      handle: "@thesamkim",
+      title: "Networking Event",
+      time: "6:00 PM - 9:00 PM",
+      date: "12/09/2025",
+      handle: "@networking",
+      location: "Student Center",
       borderColor: "#8B5CF6",
       gradient: "linear-gradient(225deg,#8B5CF6,#000)",
       url: "https://github.com/",
     },
     {
       image: "https://i.pravatar.cc/300?img=60",
-      title: "Tyler Rodriguez",
-      subtitle: "Cloud Architect",
-      handle: "@tylerrod",
+      title: "Industry Talk",
+      time: "3:00 PM - 5:00 PM",
+      date: "20/09/2025",
+      location: "Lecture Hall A",
       borderColor: "#06B6D4",
       gradient: "linear-gradient(135deg,#06B6D4,#000)",
       url: "https://aws.amazon.com/",
@@ -152,7 +163,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       ref={rootRef}
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
-      className={`relative w-full h-full flex flex-wrap justify-start items-start gap-8 ${className}`}
+      className={`relative w-full h-full grid grid-cols-[repeat(auto-fit,320px)] justify-center gap-8 ${className}`}
       style={
         {
           "--r": `${radius}px`,
@@ -166,7 +177,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
           key={i}
           onMouseMove={handleCardMove}
           onClick={() => handleCardClick(c.url)}
-          className="group relative flex flex-col w-[300px] rounded-[20px] overflow-hidden  border-transparent transition-colors duration-300 cursor-pointer"
+          className="group relative flex flex-col w-[320px] h-[380px] rounded-[20px] overflow-hidden border-transparent transition-colors duration-300 cursor-pointer"
           style={
             {
               "--card-border": c.borderColor || "transparent",
@@ -190,20 +201,51 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
               className="w-full h-[250px] object-cover rounded-[10px]"
             />
           </div>
-          <footer className="relative z-10 p-3 text-white font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1">
-            <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-            {c.handle && (
-              <span className="text-[0.95rem] opacity-80 text-right">
-                {c.handle}
-              </span>
-            )}
-            <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
-            {c.location && (
-              <span className="text-[0.85rem] opacity-85 text-right">
-                {c.location}
-              </span>
-            )}
-          </footer>
+          
+          {/* Title and Status Section */}
+          <div className="relative z-10 px-3 pt-3 pb-2">
+            <div className="flex items-start gap-3">
+              <h3 className="m-0 text-[1.05rem] font-jetbrains-mono text-white leading-tight whitespace-nowrap overflow-hidden text-ellipsis min-w-0 flex-1">
+                {c.title}
+              </h3>
+              {(c.upcomingEvent === false || c.handle) && (
+                <div className="flex-shrink-0 ml-auto">
+                  {c.upcomingEvent === false ? (
+                    <span className="text-[0.75rem] border border-white text-white px-2 py-1 rounded-full font-medium whitespace-nowrap">
+                      Upcoming
+                    </span>
+                  ) : (
+                    c.handle && (
+                      <span className="text-[0.85rem] border border-white px-2 py-1 rounded-2xl opacity-80 whitespace-nowrap">
+                        {c.handle}
+                      </span>
+                    )
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Time and Date Section */}
+          {(c.date || c.time) && (
+            <div className="relative z-10 px-3 pb-3">
+              <div className="flex justify-between items-center text-white opacity-85">
+                {c.date && (
+                  <span className="text-[0.85rem] whitespace-nowrap overflow-hidden text-ellipsis max-w-[45%]">{c.date}</span>
+                )}
+                {c.time && (
+                  <span className="text-[0.85rem] whitespace-nowrap overflow-hidden text-ellipsis max-w-[45%]">{c.time}</span>
+                )}
+              </div>
+              {c.location && (
+                <div className="mt-1">
+                  <span className="text-[0.85rem] text-white opacity-85 whitespace-nowrap overflow-hidden text-ellipsis block">
+                    📍 {c.location}
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
         </article>
       ))}
     </div>
