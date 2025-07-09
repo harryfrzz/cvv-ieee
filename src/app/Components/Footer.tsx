@@ -28,7 +28,7 @@ export default function Footer() {
         
 
         <a 
-          href="https://linkedin.com/" 
+          href="https://www.linkedin.com/company/105313208/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center space-x-3 text-gray-400 hover:text-blue-400 transition-colors duration-200"
@@ -39,7 +39,7 @@ export default function Footer() {
 
 
         <a 
-          href="https://instagram.com/" 
+          href="https://www.instagram.com/ieeecvvist/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center space-x-3 text-gray-400 hover:text-orange-400 transition-colors duration-200"
@@ -50,7 +50,7 @@ export default function Footer() {
 
 
         <a 
-          href="mailto:" 
+          href="mailto:ieeesbcvv@gmail.com" 
           className="flex items-center space-x-3 text-gray-400 hover:text-green-400 transition-colors duration-200"
         >
           <MdOutlineMailOutline className="w-6 h-6" />
