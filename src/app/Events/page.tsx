@@ -1,6 +1,6 @@
 import Wrapper from "../Components/Wrapper";
 
-export default function Gallery(){
+export default function Events(){
     return(
         <Wrapper>
             <div>
