@@ -153,6 +153,13 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
     if (url) window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const handleRegisterClick = (e: React.MouseEvent, url?: string) => {
+    e.stopPropagation(); // Prevent card click event
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
   const handleCardMove: React.MouseEventHandler<HTMLElement> = (e) => {
     const c = e.currentTarget as HTMLElement;
     const rect = c.getBoundingClientRect();
@@ -178,7 +185,6 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
         <article
           key={i}
           onMouseMove={handleCardMove}
-          onClick={() => handleCardClick(c.url)}
           className="group relative flex flex-col w-[320px] h-[400px] rounded-[20px] overflow-hidden border-transparent transition-colors duration-300 cursor-pointer"
           style={
             {
@@ -195,36 +201,29 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
             }}
           />
-          {(c.upcomingEvent === true || c.handle) && (
-                <div className="flex-shrink-0 ml-auto absolute bottom-4 z-20 right-4">
-                  {c.upcomingEvent === true ? (
-                    <div className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
-                      <span
-                        className={cn(
-                          "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]",
-                        )}
-                        style={{
-                          WebkitMask:
-                            "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                          WebkitMaskComposite: "destination-out",
-                          mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                          maskComposite: "subtract",
-                          WebkitClipPath: "padding-box",
-                        }}
-                      />
-                      <AnimatedGradientText className="text-sm font-medium">
-                        Upcoming
-                      </AnimatedGradientText>
-                    </div>
-                  ) : (
-                    c.handle && (
-                      <span className="text-[0.85rem] border border-white px-2 py-1 rounded-2xl opacity-80 whitespace-nowrap">
-                        {c.handle}
-                      </span>
-                    )
+          <div className="flex-shrink-0 ml-auto absolute bottom-4 z-20 right-3 hover:scale-110 transition ease-in">
+              <div 
+                className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] cursor-pointer"
+                onClick={(e) => handleRegisterClick(e, c.url)}
+              >
+                <span
+                  className={cn(
+                    "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]",
                   )}
-                </div>
-              )}
+                  style={{
+                    WebkitMask:
+                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    WebkitMaskComposite: "destination-out",
+                    mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    maskComposite: "subtract",
+                    WebkitClipPath: "padding-box",
+                  }}
+                />
+                <AnimatedGradientText className="text-sm font-jetbrains-mono tracking-tighter">
+                  Register Now
+                </AnimatedGradientText>
+              </div>
+          </div>
           <div className="relative z-10 flex-1 p-[10px] box-border">
             <img
               src={c.image}

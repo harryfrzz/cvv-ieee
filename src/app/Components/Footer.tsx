@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="bg-black w-full h-[250px] text-white flex items-center justify-between px-8 md:px-16 lg:px-24">
+    <div className="bg-black w-full h-[250px] text-white flex items-center border-t border-[rgb(32,32,32)] justify-between px-8 md:px-10   lg:px-24">
       <div className="flex w-41 flex-col gap-8">
           <Image src={Logo} alt="cvv ieee logo" className="w-41"/>
           <Image src={Logo2} alt="cvv ieee logo" className="w-30"/>

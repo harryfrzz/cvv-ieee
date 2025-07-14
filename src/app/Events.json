@@ -27,7 +27,7 @@
       "title": "Coding Bootcamp",
       "time": "9:00 AM - 5:00 PM",
       "date": "22/08/2025",
-      "upcomingEvent": true,
+      "upcomingEvent": false,
       "location": "Lab 101",
       "borderColor": "#F59E0B",
       "gradient": "linear-gradient(165deg, rgb(100,100,100), #000)",
