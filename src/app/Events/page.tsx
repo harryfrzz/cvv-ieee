@@ -24,8 +24,8 @@ export default function Events(){
     return(
         <Wrapper curIndex={1}>
             <div className="w-full flex flex-col p-20">
-                <div className="flex w-full h-20 justify-between items-center mt-10">
-                    <h1 className="text-white text-4xl font-jetbrains-mono tracking-tighter">All Events</h1>
+                <div className="flex w-full h-20 justify-between items-center mt-8">
+                    <h1 className="text-white text-4xl font-jetbrains-mono tracking-tighter">Events</h1>
                 </div>
                 <div className="flex gap-4 mb-8">
                     <button
@@ -42,8 +42,8 @@ export default function Events(){
                         onClick={() => setFilter('upcoming')}
                         className={`px-6 py-2 rounded-full font-jetbrains-mono text-sm transition-all duration-300 ${
                             filter === 'upcoming' 
-                                ? 'bg-green-500 text-white font-medium' 
-                                : 'bg-transparent text-white border border-green-500 hover:bg-green-500 hover:text-white'
+                                ? 'bg-white text-black font-medium' 
+                                : 'bg-transparent text-white border border-white hover:bg-white hover:text-black'
                         }`}
                     >
                         Upcoming ({upcomingCount})
@@ -52,8 +52,8 @@ export default function Events(){
                         onClick={() => setFilter('past')}
                         className={`px-6 py-2 rounded-full font-jetbrains-mono text-sm transition-all duration-300 ${
                             filter === 'past' 
-                                ? 'bg-red-500 text-white font-medium' 
-                                : 'bg-transparent text-white border border-red-500 hover:bg-red-500 hover:text-white'
+                                ? 'bg-white text-black font-medium' 
+                                : 'bg-transparent text-white border border-white hover:bg-white hover:text-black'
                         }`}
                     >
                         Past ({pastCount})
@@ -68,7 +68,7 @@ export default function Events(){
                             radius={100}
                             damping={0.45}
                             fadeOut={0.6}
-                            className="mt-10"
+                            className="mt-5"
                             ease="power3.out"
                         />
                     ) : (
