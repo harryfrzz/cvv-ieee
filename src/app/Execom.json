@@ -1,0 +1,44 @@
+{
+  "execomMembers": {
+    "coreCommittee": [
+      {
+        "id": 1,
+        "name": "Niveditha S Nair",
+        "position": "Chair",
+        "image": "https://i.pravatar.cc/300?img=1",
+        "email": "niveditha@ieee.org",
+        "linkedin": "https://linkedin.com/in/niveditha-nair"
+      }
+    ],
+    "oceanicSociety": [
+      {
+        "id": 1,
+        "name": "M Mohith",
+        "position": "Chair",
+        "image": "https://i.pravatar.cc/300?img=1",
+        "email": "mohith@ieee.org",
+        "linkedin": "https://linkedin.com/in/mohith"
+      }
+    ],
+    "computerSociety": [
+      {
+        "id": 1,
+        "name": "Ramana",
+        "position": "Chair",
+        "image": "https://i.pravatar.cc/300?img=1",
+        "email": "ramana@ieee.org",
+        "linkedin": "https://linkedin.com/in/ramana"
+      }
+    ],
+    "wieSociety": [
+      {
+        "id": 1,
+        "name": "Sasirekha",
+        "position": "Chair",
+        "image": "https://i.pravatar.cc/300?img=1",
+        "email": "sasirekha@ieee.org",
+        "linkedin": "https://linkedin.com/in/sasirekha"
+      }
+    ]
+  }
+}
