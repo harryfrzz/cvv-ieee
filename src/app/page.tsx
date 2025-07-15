@@ -46,7 +46,7 @@ export default function Home() {
                   <TypingAnimation 
                     startOnView 
                     duration={60} 
-                    className="text-white font-jetbrains-mono text-xl sm:text-2xl lg:text-3xl text-center sm:text-start tracking-tighter"
+                    className="text-white font-jetbrains-mono text-3xl mt-10 mb-2 sm:m-0 sm:text-2xl lg:text-3xl text-center sm:text-start tracking-tighter"
                   >
                     Upcoming Events
                   </TypingAnimation>

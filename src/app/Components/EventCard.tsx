@@ -20,7 +20,7 @@ interface EventCardProps {
 export default function EventCard({ event, onRegisterClick, onCardClick }: EventCardProps) {
   return (
     <div 
-      className="group relative rounded-2xl p-6 border border-[rgb(32,32,32)] hover:border-[rgb(54,54,54)] transition-all duration-300 hover:scale-105 cursor-pointer"
+      className="group relative rounded-2xl p-4 sm:p-6 border border-[rgb(32,32,32)] hover:border-[rgb(54,54,54)] transition-all duration-300 hover:scale-105 cursor-pointer"
       onClick={() => onCardClick?.(event.url)}
     >
       {/* Spotlight Effect */}
@@ -39,19 +39,19 @@ export default function EventCard({ event, onRegisterClick, onCardClick }: Event
       
       {/* Event Info */}
       <div className="relative z-10">
-        <h3 className="text-white text-lg font-jetbrains-mono font-semibold mb-2 tracking-tight line-clamp-2">
+        <h3 className="text-white text-base sm:text-lg font-jetbrains-mono font-semibold mb-2 tracking-tight line-clamp-2">
           {event.title}
         </h3>
         
         {/* Date and Time */}
         <div className="flex justify-between items-center mb-2">
           {event.date && (
-            <span className="text-gray-300 text-sm font-jetbrains-mono">
+            <span className="text-gray-300 text-xs sm:text-sm font-jetbrains-mono">
               {event.date}
             </span>
           )}
           {event.time && (
-            <span className="text-gray-300 text-sm font-jetbrains-mono">
+            <span className="text-gray-300 text-xs sm:text-sm font-jetbrains-mono">
               {event.time}
             </span>
           )}
@@ -59,19 +59,19 @@ export default function EventCard({ event, onRegisterClick, onCardClick }: Event
         
         {/* Location */}
         {event.location && (
-          <p className="text-gray-400 text-sm font-jetbrains-mono mb-4 opacity-80">
+          <p className="text-gray-400 text-xs sm:text-sm font-jetbrains-mono mb-4 opacity-80">
             📍 {event.location}
           </p>
         )}
         
         {/* Register Button - Only for upcoming events */}
         {event.upcomingEvent && (
-          <div className="flex justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <div className="bg-gradient-to-r from-blue-500/50 to-purple-500/40 text-white px-5 py-2 rounded-full text-xs font-jetbrains-mono">
-            Upcoming
-          </div>
+          <div className="flex flex-col sm:flex-row justify-between gap-3 sm:gap-0 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="bg-gradient-to-r from-blue-500/50 to-purple-500/40 text-white px-4 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-xs font-jetbrains-mono w-fit">
+              Upcoming
+            </div>
             <div 
-              className="group relative flex items-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] cursor-pointer"
+              className="group relative flex items-center rounded-full px-4 sm:px-4 py-2 sm:py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] cursor-pointer w-fit"
               onClick={(e) => onRegisterClick?.(e, event.url)}
             >
               <span
@@ -88,7 +88,7 @@ export default function EventCard({ event, onRegisterClick, onCardClick }: Event
                 }}
               />
               
-              <AnimatedGradientText className="text-sm font-jetbrains-mono tracking-tighter">
+              <AnimatedGradientText className="text-sm sm:text-sm font-jetbrains-mono tracking-tighter">
                 Register Now
               </AnimatedGradientText>
             </div>
@@ -97,8 +97,8 @@ export default function EventCard({ event, onRegisterClick, onCardClick }: Event
         
         {/* Past Event Label */}
         {!event.upcomingEvent && (
-          <div className="flex justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="text-gray-400 text-sm font-jetbrains-mono px-4 py-1.5 border border-gray-600 rounded-full">
+          <div className="flex justify-end opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="text-gray-400 text-sm sm:text-sm font-jetbrains-mono px-4 sm:px-4 py-2 sm:py-1.5 border border-gray-600 rounded-full">
               Past Event
             </span>
           </div>

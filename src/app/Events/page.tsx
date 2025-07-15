@@ -38,20 +38,20 @@ export default function Events(){
     return(
         <BlurFade delay={0.25} inView>
             <Wrapper curIndex={1}>
-                <div className="w-full flex flex-col p-20">
+                <div className="w-full flex flex-col p-4 sm:p-6 md:p-8 lg:p-20">
                     {/* Title - First to appear */}
                     <BlurFade delay={0.4} inView>
-                        <div className="flex w-full h-20 justify-between items-center mt-5">
-                            <h1 className="text-white text-4xl font-jetbrains-mono tracking-tighter">Events</h1>
+                        <div className="flex w-full h-16 sm:h-20 justify-between items-center mt-2 sm:mt-5 mb-4 sm:mb-0">
+                            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-jetbrains-mono tracking-tighter">Events</h1>
                         </div>
                     </BlurFade>
                     
                     {/* Filter Buttons - Second to appear */}
                     <BlurFade delay={0.6} inView>
-                        <div className="flex gap-4 mb-8">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
                             <button
                                 onClick={() => setFilter('all')}
-                                className={`px-6 py-2 rounded-full font-jetbrains-mono text-sm transition-all duration-300 ${
+                                className={`px-4 sm:px-6 py-4 sm:py-2 md:py-2 rounded-full font-jetbrains-mono text-xs sm:text-sm transition-all duration-300 ${
                                     filter === 'all' 
                                         ? 'bg-white text-black font-medium' 
                                         : 'bg-transparent text-white border border-white hover:bg-white hover:text-black'
@@ -61,7 +61,7 @@ export default function Events(){
                             </button>
                             <button
                                 onClick={() => setFilter('upcoming')}
-                                className={`px-6 py-2 rounded-full font-jetbrains-mono text-sm transition-all duration-300 ${
+                                className={`px-4 sm:px-6 py-4 sm:py-2 md:py-2 rounded-full font-jetbrains-mono text-xs sm:text-sm transition-all duration-300 ${
                                     filter === 'upcoming' 
                                         ? 'bg-white text-black font-medium' 
                                         : 'bg-transparent text-white border border-white hover:bg-white hover:text-black'
@@ -71,7 +71,7 @@ export default function Events(){
                             </button>
                             <button
                                 onClick={() => setFilter('past')}
-                                className={`px-6 py-2 rounded-full font-jetbrains-mono text-sm transition-all duration-300 ${
+                                className={`px-4 sm:px-6 py-4 sm:py-2 md:py-2 rounded-full font-jetbrains-mono text-xs sm:text-sm transition-all duration-300 ${
                                     filter === 'past' 
                                         ? 'bg-white text-black font-medium' 
                                         : 'bg-transparent text-white border border-white hover:bg-white hover:text-black'
@@ -86,7 +86,7 @@ export default function Events(){
                     <BlurFade delay={0.8} inView>
                         <div className="w-full min-h-screen">
                             {filteredEvents.length > 0 ? (
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                                     {filteredEvents.map((event, index) => (
                                         <BlurFade key={index} delay={0.9 + (0.1 * index)} inView>
                                             <EventCard
@@ -98,8 +98,8 @@ export default function Events(){
                                     ))}
                                 </div>
                             ) : (
-                                <div className="flex items-center justify-center h-64">
-                                    <p className="text-white text-xl font-jetbrains-mono opacity-60">
+                                <div className="flex items-center justify-center h-48 sm:h-64">
+                                    <p className="text-white text-lg sm:text-xl font-jetbrains-mono opacity-60 text-center px-4">
                                         No {filter === 'all' ? '' : filter} events found
                                     </p>
                                 </div>
