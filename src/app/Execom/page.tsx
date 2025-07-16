@@ -90,7 +90,7 @@ export default function Execom() {
         <div className="w-full min-h-screen flex flex-col p-4 sm:p-6 md:p-8 lg:p-20">
           {/* Main Title */}
           <BlurFade delay={0.4} inView>
-            <div className="flex w-full h-16 sm:h-20 justify-between items-center mt-4 sm:mt-6 lg:mt-8 mb-6 sm:mb-8 lg:mb-12">
+            <div className="flex w-full h-16 sm:h-20 justify-center sm:justify-between items-center mt-20 sm:mt-6 lg:mt-8 mb-6 sm:mb-8 lg:mb-12">
               <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-jetbrains-mono tracking-tighter">
                 Execom Members
               </h1>
@@ -99,7 +99,7 @@ export default function Execom() {
           
           {/* Core Committee Section */}
           <div className="mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
               Core Committee
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -111,7 +111,7 @@ export default function Execom() {
 
           {/* Oceanic Society Section */}
           <div className="mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
               Oceanic Society
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -123,7 +123,7 @@ export default function Execom() {
 
           {/* Computer Society Section */}
           <div className="mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
               Computer Society
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -135,7 +135,7 @@ export default function Execom() {
 
           {/* Women in Engineering (WIE) Section */}
           <div className="mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
               Women in Engineering (WIE)
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">

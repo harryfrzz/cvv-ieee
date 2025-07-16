@@ -6,7 +6,7 @@ import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 export default function Societies(){
     return(
-        <div className="flex flex-col lg:flex-row w-full min-h-[300px] h-auto justify-between items-center p-4 sm:p-6 md:p-8 lg:p-20 mb-6 sm:mb-8 lg:mb-10 bg-black gap-10 lg:gap-0">
+        <div className="flex flex-col lg:flex-row w-full min-h-[300px] h-auto justify-between items-center p-4 sm:p-6 md:p-8 lg:p-20 sm:mb-8 lg:mb-10 bg-black gap-10 lg:gap-0">
             <TypingAnimation 
                 startOnView 
                 duration={60} 

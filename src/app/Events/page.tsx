@@ -41,7 +41,7 @@ export default function Events(){
                 <div className="w-full flex flex-col p-4 sm:p-6 md:p-8 lg:p-20">
                     {/* Title - First to appear */}
                     <BlurFade delay={0.4} inView>
-                        <div className="flex w-full h-16 sm:h-20 justify-between items-center mt-2 sm:mt-5 mb-4 sm:mb-0">
+                        <div className="flex w-full h-16 sm:h-20 justify-center items-center sm:justify-between mt-20 sm:mt-5 mb-4 sm:mb-0">
                             <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-jetbrains-mono tracking-tighter">Events</h1>
                         </div>
                     </BlurFade>

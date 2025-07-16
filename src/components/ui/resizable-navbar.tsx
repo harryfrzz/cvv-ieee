@@ -6,8 +6,10 @@ import {
   AnimatePresence,
 } from "motion/react";
 import Link from "next/link";
+import Logo from "../../app/res/web-logo.png";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 
 interface NavbarProps {
@@ -116,11 +118,11 @@ export const MobileNav = ({ children, className }: MobileNavProps) => {
         width: "90%",
         paddingRight: "12px",
         paddingLeft: "12px",
-        borderRadius: "4px",
+        borderRadius: "50px",
         transform: "translateY(20px)",
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-white/60 px-0 py-2 lg:hidden dark:bg-neutral-950/80",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-black/30 px-0 py-2 lg:hidden",
         className,
       )}
     >
@@ -178,9 +180,9 @@ export const MobileNavToggle = ({
   onClick: () => void;
 }) => {
   return isOpen ? (
-    <IconX className="text-black dark:text-white" onClick={onClick} />
+    <IconX className="text-white" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-black dark:text-white" onClick={onClick} />
+    <IconMenu2 className="text-white" onClick={onClick} />
   );
 };
 
@@ -190,13 +192,13 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
+      <Image
+        src={Logo}
+        className="w-26"
         alt="logo"
-        width={30}
-        height={30}
+        width={500}
+        height={500}
       />
-      <span className="font-medium text-black border-[rgb(160,160,160)] dark:text-white">Startup</span>
     </a>
   );
 };

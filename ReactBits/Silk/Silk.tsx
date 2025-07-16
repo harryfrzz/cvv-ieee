@@ -94,14 +94,20 @@ const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane(
   { uniforms },
   ref,
 ) {
-  const { viewport } = useThree();
+  const { viewport, size } = useThree();
 
   useLayoutEffect(() => {
     const mesh = ref as React.MutableRefObject<Mesh | null>;
     if (mesh.current) {
-      mesh.current.scale.set(viewport.width, viewport.height, 1);
+      // Scale based on viewport with mobile considerations
+      const scaleMultiplier = size.width < 768 ? 1.2 : 1; // Bigger scale for mobile
+      mesh.current.scale.set(
+        viewport.width * scaleMultiplier, 
+        viewport.height * scaleMultiplier, 
+        1
+      );
     }
-  }, [ref, viewport]);
+  }, [ref, viewport, size]);
 
   useFrame((_state: RootState, delta: number) => {
     const mesh = ref as React.MutableRefObject<Mesh | null>;
@@ -156,9 +162,32 @@ const Silk: React.FC<SilkProps> = ({
   );
 
   return (
-    <Canvas dpr={[1, 2]} frameloop="always">
-      <SilkPlane ref={meshRef} uniforms={uniforms} />
-    </Canvas>
+    <div className="w-full h-full">
+      <Canvas 
+        dpr={[1, 2]} 
+        frameloop="always"
+        className="w-full h-full"
+        style={{ 
+          width: '100%', 
+          height: '100%',
+          minHeight: '100vh',
+          touchAction: 'none' // Prevents mobile scrolling issues
+        }}
+        gl={{ 
+          antialias: true,
+          alpha: true,
+          powerPreference: "high-performance"
+        }}
+        camera={{
+          fov: 50,
+          near: 0.1,
+          far: 1000,
+          position: [0, 0, 1]
+        }}
+      >
+        <SilkPlane ref={meshRef} uniforms={uniforms} />
+      </Canvas>
+    </div>
   );
 };
 
