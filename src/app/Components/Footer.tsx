@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="bg-black w-full min-h-[250px] h-auto text-white flex flex-col lg:flex-row items-center lg:items-center border-t border-[rgb(32,32,32)] justify-between px-4 sm:px-6 md:px-8 lg:px-24 py-6 lg:py-0 gap-6 lg:gap-0">
       
       {/* Logo Section */}
-      <div className="flex w-full lg:w-41 flex-col items-start lg:items-start gap-4 lg:gap-8">
+      <div className="flex w-full lg:w-41 flex-row justify-center sm:flex-col items-start lg:items-start gap-4 lg:gap-8">
         <Image src={Logo} alt="cvv ieee logo" className="w-32 sm:w-36 lg:w-41"/>
         <Image src={Logo2} alt="cvv ieee logo" className="w-24 sm:w-28 lg:w-30"/>
       </div>

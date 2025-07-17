@@ -82,30 +82,30 @@ export default function Events(){
                         </div>
                     </BlurFade>
 
-                    {/* Events Grid - Third to appear with individual blur for each event */}
-                    <BlurFade delay={0.8} inView>
-                        <div className="w-full min-h-screen">
-                            {filteredEvents.length > 0 ? (
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-                                    {filteredEvents.map((event, index) => (
-                                        <BlurFade key={index} delay={0.9 + (0.1 * index)} inView>
-                                            <EventCard
-                                                event={event}
-                                                onRegisterClick={handleRegisterClick}
-                                                onCardClick={handleCardClick}
-                                            />
-                                        </BlurFade>
-                                    ))}
-                                </div>
-                            ) : (
+                    {/* Events Grid - Faster loading */}
+                    <div className="w-full min-h-screen">
+                        {filteredEvents.length > 0 ? (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+                                {filteredEvents.map((event, index) => (
+                                    <BlurFade key={index} delay={0.1 + (0.05 * index)} inView>
+                                        <EventCard
+                                            event={event}
+                                            onRegisterClick={handleRegisterClick}
+                                            onCardClick={handleCardClick}
+                                        />
+                                    </BlurFade>
+                                ))}
+                            </div>
+                        ) : (
+                            <BlurFade delay={0.1} inView>
                                 <div className="flex items-center justify-center h-48 sm:h-64">
                                     <p className="text-white text-lg sm:text-xl font-jetbrains-mono opacity-60 text-center px-4">
                                         No {filter === 'all' ? '' : filter} events found
                                     </p>
                                 </div>
-                            )}
-                        </div>
-                    </BlurFade>
+                            </BlurFade>
+                        )}
+                    </div>
                 </div>
             </Wrapper>
         </BlurFade>
