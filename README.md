@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="https://github.com/harryfrzz/cvv-ieee/blob/main/src/app/res/web-logo.png" alt="CVV IEEE Logo" width="400" />
+</p>
+
 # CVV IEEE SB Website
 
 ## Welcome to the **official repository** of the **CVV IEEE Student Branch Website**!  
@@ -36,11 +41,12 @@
   # or
   yarn dev
   ```
+
 ## Contributing
 
 We welcome all contributions to this project!  
 Please follow the commit message conventions below to keep the history clean and meaningful:
 
-- `feat:<description>` – For adding a new feature
-- `fix:<description>` – For fixing a bug
-- `bug:<description>` – For documenting a bug-related fix or issue
+- `feat:<description>` – For adding a new feature  
+- `fix:<description>` – For fixing a bug  
+- `bug:<description>` – For documenting a bug-related fix or issue  
