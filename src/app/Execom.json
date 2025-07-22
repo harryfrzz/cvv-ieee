@@ -5,9 +5,57 @@
         "id": 1,
         "name": "Niveditha S Nair",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "niveditha@ieee.org",
-        "linkedin": "https://linkedin.com/in/niveditha-nair"
+        "image": "",
+        "email": "niveditha.nair@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/niveditha-sathish-nair-33ba27291/"
+      },
+      {
+        "id": 2,
+        "name": "Shyam KJ",
+        "position": "Vice-Chair",
+        "image": "",
+        "email": "harikrishna.c@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 3,
+        "name": "Harikrishna C",
+        "position": "Secretary",
+        "image": "",
+        "email": "harikrishna.c@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 4,
+        "name": "Jenson T Rajan",
+        "position": "Treasurer",
+        "image": "",
+        "email": "harikrishna.c@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 5,
+        "name": "Namitha Prasanth",
+        "position": "Joint Secretary",
+        "image": "",
+        "email": "namitha.prasanth@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/namitha-prasanth-nair-a01771322"
+      },
+      {
+        "id": 6,
+        "name": "Krishnagadha S P",
+        "position": "Joint Treasurer",
+        "image": "",
+        "email": "krishnagadha.sp@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/krishnagadha-sp-6425a3347"
+      },
+      {
+        "id": 7,
+        "name": "Deepak P Lal",
+        "position": "MD Chair",
+        "image": "",
+        "email": "deepak.lal@ieee.org",
+        "linkedin": ""
       }
     ],
     "oceanicSociety": [
@@ -15,29 +63,131 @@
         "id": 1,
         "name": "M Mohith",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "mohith@ieee.org",
-        "linkedin": "https://linkedin.com/in/mohith"
+        "image": "",
+        "email": "m.mohith@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/m-mohith-6b217b291"
+      },
+      {
+        "id": 2,
+        "name": "Amritavarshini S",
+        "position": "Program Coordinator",
+        "image": "",
+        "email": "amritavarshini.s@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/amritavarshini-s-496a53322"
       }
     ],
     "computerSociety": [
       {
         "id": 1,
-        "name": "Ramana",
-        "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "ramana@ieee.org",
-        "linkedin": "https://linkedin.com/in/ramana"
+        "name": "Parvathy B Nair",
+        "position": "Secretary",
+        "image": "",
+        "email": "parvathy.nair@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/parvathy-b-nair-759719322"
+      },
+      {
+        "id": 2,
+        "name": "Veena S R",
+        "position": "Treasurer",
+        "image": "",
+        "email": "veena.sr@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/veena-s-r-ba8643341"
       }
     ],
     "wieSociety": [
       {
         "id": 1,
-        "name": "Sasirekha",
+        "name": "Gummalla Sasirekha",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "sasirekha@ieee.org",
-        "linkedin": "https://linkedin.com/in/sasirekha"
+        "image": "",
+        "email": "gummalla.sasirekha@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/gummalla-sasirekha-a89260293"
+      },
+      {
+        "id": 2,
+        "name": "Minakshi Vinod",
+        "position": "Secretary",
+        "image": "",
+        "email": "minakshi.vinod@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/minakshi-vinod-2037aa31a"
+      },
+      {
+        "id": 3,
+        "name": "Muhammed Raiyan Najeem",
+        "position": "Treasurer",
+        "image": "",
+        "email": "raiyan.najeem@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/muhammed-raiyan-najeem-4aa55a305"
+      },
+      {
+        "id": 4,
+        "name": "Nandana Sankar",
+        "position": "Program Coordinator",
+        "image": "",
+        "email": "nandana.sankar@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/nandana-sankar-6a3945354"
+      }
+    ],
+    "mediaTeam": [
+      {
+        "id": 1,
+        "name": "Malavika Sreekumar",
+        "position": "Member",
+        "image": "",
+        "email": "malavika.sreekumar@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/malavikasreekumar"
+      },
+      {
+        "id": 2,
+        "name": "Harigovind R",
+        "position": "Member",
+        "image": "",
+        "email": "harigovind.r@ieee.org",
+        "linkedin": ""
+      },
+      {
+        "id": 3,
+        "name": "Ardra Aji Kumar",
+        "position": "Member",
+        "image": "",
+        "email": "ardra.ajikumar@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/ardra-ajikumar-381928322"
+      }
+    ],
+    "designTeam": [
+      {
+        "id": 1,
+        "name": "Rohith P",
+        "position": "Member",
+        "image": "",
+        "email": "rohith.p@ieee.org",
+        "linkedin": ""
+      },
+      {
+        "id": 2,
+        "name": "Devika S Nair",
+        "position": "Member",
+        "image": "",
+        "email": "devika.nair@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/devika-s-nair-5a729b325"
+      }
+    ],
+    "webTeam": [
+      {
+        "id": 1,
+        "name": "Sreya Shyjash",
+        "position": "Member",
+        "image": "",
+        "email": "sreya.shyjash@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/sreya-shyjash"
+      },
+      {
+        "id": 2,
+        "name": "Jayalakshmi V P",
+        "position": "Member",
+        "image": "",
+        "email": "jayalakshmi.vp@ieee.org",
+        "linkedin": "https://www.linkedin.com/in/jayalakshmi-v-p-7a5579352"
       }
     ]
   }

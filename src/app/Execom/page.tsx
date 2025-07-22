@@ -18,6 +18,7 @@ interface ExecomData {
     oceanicSociety: ExecomMember[];
     computerSociety: ExecomMember[];
     wieSociety: ExecomMember[];
+    webTeam: ExecomMember[];
   };
 }
 
@@ -140,6 +141,16 @@ export default function Execom() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {data.execomMembers.wieSociety.map((member, index) => (
+                <MemberCard key={member.id} member={member} index={index} />
+              ))}
+            </div>
+          </div>
+           <div className="mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+              Web Team
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              {data.execomMembers.webTeam.map((member, index) => (
                 <MemberCard key={member.id} member={member} index={index} />
               ))}
             </div>
