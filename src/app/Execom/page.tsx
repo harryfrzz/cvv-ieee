@@ -18,6 +18,8 @@ interface ExecomData {
     oceanicSociety: ExecomMember[];
     computerSociety: ExecomMember[];
     wieSociety: ExecomMember[];
+    mediaTeam: ExecomMember[];
+    designTeam: ExecomMember[];
     webTeam: ExecomMember[];
   };
 }
@@ -34,6 +36,7 @@ const MemberCard = ({ member, index }: { member: ExecomMember; index: number }) 
           src={member.image}
           alt={member.name}
           fill
+          quality={50}
           className="object-cover transition-transform duration-300 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
@@ -51,18 +54,6 @@ const MemberCard = ({ member, index }: { member: ExecomMember; index: number }) 
         
         {/* Contact Links */}
         <div className="flex gap-2 sm:gap-3 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {member.email && (
-            <a
-              href={`mailto:${member.email}`}
-              className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors duration-200"
-              title="Email"
-            >
-              <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-              </svg>
-            </a>
-          )}
           {member.linkedin && (
             <a
               href={member.linkedin}
@@ -151,6 +142,26 @@ export default function Execom() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {data.execomMembers.webTeam.map((member, index) => (
+                <MemberCard key={member.id} member={member} index={index} />
+              ))}
+            </div>
+          </div>
+          <div className="mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+              Media Team
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              {data.execomMembers.mediaTeam.map((member, index) => (
+                <MemberCard key={member.id} member={member} index={index} />
+              ))}
+            </div>
+          </div>
+          <div className="mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-white text-lg sm:text-xl lg:text-2xl text-center sm:text-start font-jetbrains-mono font-semibold mb-4 sm:mb-6 lg:mb-8 tracking-tight">
+              Design Team
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+              {data.execomMembers.designTeam.map((member, index) => (
                 <MemberCard key={member.id} member={member} index={index} />
               ))}
             </div>
