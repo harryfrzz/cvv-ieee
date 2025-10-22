@@ -1,5 +1,27 @@
 {
   "events": [
+     { 
+      "image": "/inauguration sb.jpeg",
+      "title": "IEEE Student Branch Inauguration",
+      "time": "11:00 AM - 12:20 PM",
+      "date": "17/04/2024",
+      "upcomingEvent": false,
+      "location": "Chinmaya Hall,CVV,Veliyanad,Ernakulam ",
+      "borderColor": "#F97316",
+      "gradient": "linear-gradient(180deg, rgb(115,115,115), #000)",
+      "url": "https://example.com/"
+    },
+    {
+      "image": "/ai yuga.jpeg",
+      "title": "AI Yuga:Co-existence with humanity",
+      "time": "2:00 PM - 4:00 PM",
+      "date": "6/05/2024",
+      "upcomingEvent": false,
+      "location": "Chinmaya Hall,CVV,Veliyanad,Ernakulam ",
+      "borderColor": "#F97316",
+      "gradient": "linear-gradient(180deg, rgb(115,115,115), #000)",
+      "url": "https://example.com/"
+    },
     {
       "image": "https://i.pravatar.cc/300?img=8",
       "title": "Tech Workshop",
@@ -60,7 +82,7 @@
       "title": "Industry Talk",
       "time": "3:00 PM - 5:00 PM",
       "date": "20/09/2025",
-      "upcomingEvent": true,
+      "upcomingEvent": false,
       "location": "Lecture Hall A",
       "borderColor": "#06B6D4",
       "gradient": "linear-gradient(135deg, rgb(140,140,140), #000)",
@@ -71,11 +93,14 @@
       "title": "Web Development Seminar",
       "time": "1:00 PM - 4:00 PM",
       "date": "10/10/2025",
-      "upcomingEvent": true,
+      "upcomingEvent": false,
       "location": "Computer Lab",
       "borderColor": "#F97316",
       "gradient": "linear-gradient(180deg, rgb(115,115,115), #000)",
       "url": "https://example.com/"
-    }
-  ]
+    } 
+
+   
+
+       ]
 }
