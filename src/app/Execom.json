@@ -123,20 +123,36 @@
     "mediaTeam": [
       {
         "id": 1,
+        "name": "Harinand",
+        "position": "Media Lead",
+        "image": "",
+        "linkedin": "none"
+
+      },
+      {
+        "id": 2,
+        "name": "Ravi Shankar",
+        "position": "Member",
+        "image": "/ravi.jpg",
+        "linkedin": "http://www.linkedin.com/in/ravishankar-varier-1a1a252ba"
+
+      },
+      {
+        "id": 3,
         "name": "Malavika Sreekumar",
         "position": "Member",
         "image": "/malavika.jpg",
         "linkedin": "https://www.linkedin.com/in/malavikasreekumar"
       },
       {
-        "id": 2,
+        "id": 4,
         "name": "Harigovind R",
         "position": "Member",
         "image": "/harigovind.jpg",
         "linkedin": "none"
       },
       {
-        "id": 3,
+        "id": 5,
         "name": "Ardra Aji Kumar",
         "position": "Member",
         "image": "/ardra.jpg",
@@ -145,30 +161,44 @@
     ],
     "designTeam": [
       {
-        "id": 1,
+        "id": 2,
+        "name": "Devika S Nair",
+        "position": "Member",
+        "image": "/devika.jpg",
+        "linkedin": "https://www.linkedin.com/in/devika-s-nair-5a729b325"
+      },
+      {
+        "id": 3,
         "name": "Rohith P",
         "position": "Member",
         "image": "/rohith.jpg",
         "linkedin": "none"
       },
       {
-        "id": 2,
-        "name": "Devika S Nair",
+        "id": 4,
+        "name": "Shruti Jayakrishnan",
         "position": "Member",
-        "image": "/devika.jpg",
-        "linkedin": "https://www.linkedin.com/in/devika-s-nair-5a729b325"
+        "image": "",
+        "linkedin": "https://www.linkedin.com/in/shruti-jayakrishnan-217775324"
       }
     ],
     "webTeam": [
       {
-        "id": 1,
+        "id":1,
+        "name": "Hanna Susan Eldo",
+        "position": "Web Lead",
+        "image": "/hanna.jpg",
+        "linkedin": "https://www.linkedin.com/in/hanna-susan-eldo-13mar2005"
+      },
+      {
+        "id": 2,
         "name": "Sreya Shyjash",
         "position": "Member",
         "image": "/sreya.jpg",
         "linkedin": "https://www.linkedin.com/in/sreya-shyjash"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Jayalakshmi V P",
         "position": "Member",
         "image": "/jayalakshmi.jpg",

@@ -2,7 +2,7 @@
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
+import link from "next/link";
 interface EventCardProps {
   event: {
     image: string;
