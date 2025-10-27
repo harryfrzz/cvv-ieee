@@ -5,9 +5,50 @@
         "id": 1,
         "name": "Niveditha S Nair",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "niveditha@ieee.org",
-        "linkedin": "https://linkedin.com/in/niveditha-nair"
+        "image": "/niveditha.jpg",
+        "linkedin": "https://www.linkedin.com/in/niveditha-sathish-nair-33ba27291/"
+      },
+      {
+        "id": 2,
+        "name": "Shyam KJ",
+        "position": "Vice-Chair",
+        "image": "",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 3,
+        "name": "Harikrishna C",
+        "position": "Secretary",
+        "image": "/harikrishna.jpg",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 4,
+        "name": "Jenson T Rajan",
+        "position": "Treasurer",
+        "image": "/jenson.jpg",
+        "linkedin": "https://www.linkedin.com/in/harikrishna-c-614193262/"
+      },
+      {
+        "id": 5,
+        "name": "Namitha Prasanth",
+        "position": "Joint Secretary",
+        "image": "/namitha.jpg",
+        "linkedin": "https://www.linkedin.com/in/namitha-prasanth-nair-a01771322"
+      },
+      {
+        "id": 6,
+        "name": "Krishnagadha S P",
+        "position": "Joint Treasurer",
+        "image": "/krishnagadha.jpeg",
+        "linkedin": "https://www.linkedin.com/in/krishnagadha-sp-6425a3347"
+      },
+      {
+        "id": 7,
+        "name": "Deepak P Lal",
+        "position": "MD Chair",
+        "image": "/deepak.jpg",
+        "linkedin": "none"
       }
     ],
     "oceanicSociety": [
@@ -15,29 +56,138 @@
         "id": 1,
         "name": "M Mohith",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "mohith@ieee.org",
-        "linkedin": "https://linkedin.com/in/mohith"
+        "image": "/mohith.jpeg",
+        "linkedin": "https://www.linkedin.com/in/m-mohith-6b217b291"
+      },
+      {
+        "id": 2,
+        "name": "Amritavarshini S",
+        "position": "Program Coordinator",
+        "image": "/amrita.jpeg",
+        "linkedin": "https://www.linkedin.com/in/amritavarshini-s-496a53322"
+      },
+      {
+        "id": 3,
+        "name": "Gayathri M Rajeev",
+        "position": "Treasurer",
+        "image": "/gayathri.jpg",
+        "linkedin": "https://www.linkedin.com/in/amritavarshini-s-496a53322"
       }
     ],
     "computerSociety": [
       {
         "id": 1,
-        "name": "Ramana",
+        "name": "Ramana N D",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "ramana@ieee.org",
-        "linkedin": "https://linkedin.com/in/ramana"
+        "image": "/ramana.jpg",
+        "linkedin": "https://www.linkedin.com/in/ramana-n-d-b08262293"
+      },
+      {
+        "id": 2,
+        "name": "Parvathy B Nair",
+        "position": "Secretary",
+        "image": "/parvathy.jpg",
+        "linkedin": "https://www.linkedin.com/in/parvathy-b-nair-759719322"
+      },
+      {
+        "id": 3,
+        "name": "Veena S R",
+        "position": "Treasurer",
+        "image": "/veena.jpg",
+        "linkedin": "https://www.linkedin.com/in/veena-s-r-ba8643341"
       }
     ],
     "wieSociety": [
       {
         "id": 1,
-        "name": "Sasirekha",
+        "name": "Gummalla Sasirekha",
         "position": "Chair",
-        "image": "https://i.pravatar.cc/300?img=1",
-        "email": "sasirekha@ieee.org",
-        "linkedin": "https://linkedin.com/in/sasirekha"
+        "image": "/sasirekha.jpg",
+        "linkedin": "https://www.linkedin.com/in/gummalla-sasirekha-a89260293"
+      },
+      {
+        "id": 2,
+        "name": "Minakshi Vinod",
+        "position": "Secretary",
+        "image": "/minakshi.jpg",
+        "linkedin": "https://www.linkedin.com/in/minakshi-vinod-2037aa31a"
+      },
+      {
+        "id": 3,
+        "name": "Muhammed Raiyan Najeem",
+        "position": "Treasurer",
+        "image": "/rayan.jpeg",
+        "linkedin": "https://www.linkedin.com/in/muhammed-raiyan-najeem-4aa55a305"
+      },
+      {
+        "id": 4,
+        "name": "Nandana Sankar",
+        "position": "Program Coordinator",
+        "image": "/nandana.jpg",
+        "linkedin": "https://www.linkedin.com/in/nandana-sankar-6a3945354"
+      }
+    ],
+    "mediaTeam": [
+      {
+        "id": 1,
+        "name": "Malavika Sreekumar",
+        "position": "Member",
+        "image": "/malavika.jpg",
+        "linkedin": "https://www.linkedin.com/in/malavikasreekumar"
+      },
+      {
+        "id": 2,
+        "name": "Harigovind R",
+        "position": "Member",
+        "image": "/harigovind.jpg",
+        "linkedin": "none"
+      },
+      {
+        "id": 3,
+        "name": "Ardra Aji Kumar",
+        "position": "Member",
+        "image": "/ardra.jpg",
+        "linkedin": "https://www.linkedin.com/in/ardra-ajikumar-381928322"
+      }
+    ],
+    "designTeam": [
+      {
+      "id": 1,
+        "name": "Dheeraj Nigam",
+        "position": "Lead",
+        "image": "/dheeraj.jpg",
+        "linkedin": "https://www.linkedin.com/in/dheeraj-nigam-80bb64247"
+      },
+    
+      {
+        "id": 2,
+        "name": "Rohith P",
+        "position": "Member",
+        "image": "/rohith.jpg",
+        "linkedin": "none"
+      },
+      {
+        "id": 3,
+        "name": "Devika S Nair",
+        "position": "Member",
+        "image": "/devika.jpg",
+        "linkedin": "https://www.linkedin.com/in/devika-s-nair-5a729b325"
+      }
+    ],
+    "webTeam": [
+      {
+        "id": 1,
+        "name": "Sreya Shyjash",
+        "position": "Member",
+        "image": "/sreya.jpg",
+        "linkedin": "https://www.linkedin.com/in/sreya-shyjash"
+      },
+      {
+        "id": 2,
+        "name": "Jayalakshmi V P",
+        "position": "Member",
+        "image": "/jayalakshmi.jpg",
+        "linkedin": "https://www.linkedin.com/in/jayalakshmi-v-p-7a5579352"
       }
     ]
   }
